@@ -44,7 +44,7 @@ class MBLiveCaptureTool: NSObject{
                 
             })
         case .authorized:
-            debugPrint("已经开启授权")
+            debugPrint("已经开启视频授权")
             /// 开始采集视频数据
             self.session.running = true
             
@@ -61,20 +61,12 @@ class MBLiveCaptureTool: NSObject{
         let status = AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeAudio)
         switch status {
         case .notDetermined:
-            AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: {[weak self] (granted) in
+            AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeAudio, completionHandler: {(granted) in
                 guard granted else { return}
-                DispatchQueue.main.async(execute: {
-                    
-                    /// 开始采集视频数据
-                    self?.session.running = true
-                })
-                
             })
         case .authorized:
-            debugPrint("已经开启授权")
-            /// 开始采集视频数据
-            self.session.running = true
-            
+            debugPrint("已经音频开启授权")
+            /// 开始采集音频数据
         case.denied:break
         case.restricted:break
             
@@ -82,8 +74,28 @@ class MBLiveCaptureTool: NSObject{
 
     
     }
-
     
+    
+    /// 切换数据源(前后摄像头)
+    public func switchCamera(){
+        
+        let position = session.captureDevicePosition
+        session.captureDevicePosition = (position == AVCaptureDevicePosition.back) ?AVCaptureDevicePosition.front : AVCaptureDevicePosition.back
+    }
+    
+    /// 是否开始直播
+    public func startCapture(start: Bool){
+        
+        if start == true { //开始采集
+            let steamInfo = LFLiveStreamInfo()
+            steamInfo.url = "rtmp://192.168.0.100:1935/rtmplive/room"
+            session.startLive(steamInfo)
+        }else{ //停止采集
+            session.stopLive()
+        }
+    
+    
+    }
 }
 
  //MARK: - 采集LFLive代理

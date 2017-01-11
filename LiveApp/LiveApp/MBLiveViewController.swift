@@ -13,6 +13,7 @@ class MBLiveViewController: UIViewController {
     fileprivate lazy var capture: MBLiveCaptureTool = MBLiveCaptureTool()
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialCapture()
         
     }
     
@@ -50,17 +51,14 @@ extension MBLiveViewController{
     /// 切换摄像头
     @IBAction func switchCamera(_ sender: UIButton) {
         
-        
-        
+        capture.switchCamera()
     }
-    
     
     /// 开始直播
     @IBAction func startLive(_ sender: UIButton) {
         
-        
-        
-        
+        sender.isSelected = !sender.isSelected
+        capture.startCapture(start: sender.isSelected)
     }
     
     

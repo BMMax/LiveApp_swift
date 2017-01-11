@@ -42,6 +42,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQg-4a-itK">
                                 <rect key="frame" x="156" y="558" width="62" height="30"/>
                                 <state key="normal" title="开始直播"/>
+                                <state key="selected" title="停止直播"/>
                                 <connections>
                                     <action selector="startLive:" destination="j4y-uI-iNx" eventType="touchUpInside" id="Tmf-Wk-AAp"/>
                                 </connections>
