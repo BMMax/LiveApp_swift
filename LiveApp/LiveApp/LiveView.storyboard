@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="j4y-uI-iNx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Live View Controller-->
+        <scene sceneID="M0F-Af-Gdb">
+            <objects>
+                <viewController id="j4y-uI-iNx" customClass="MBLiveViewController" customModule="LiveApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f5D-Vf-mds"/>
+                        <viewControllerLayoutGuide type="bottom" id="r3D-3S-xEa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fip-YW-CUL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZx-us-yY2">
+                                <rect key="frame" x="16" y="79" width="45" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="关闭美颜"/>
+                                <state key="selected" title="打开美颜"/>
+                                <connections>
+                                    <action selector="swichBeauty:" destination="j4y-uI-iNx" eventType="touchUpInside" id="LOH-HK-Zg9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFL-yY-lPz">
+                                <rect key="frame" x="302" y="80" width="57" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="前置摄像头"/>
+                                <state key="selected" title="后置摄像头"/>
+                                <connections>
+                                    <action selector="switchCamera:" destination="j4y-uI-iNx" eventType="touchUpInside" id="Ba4-75-Hs0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQg-4a-itK">
+                                <rect key="frame" x="156" y="558" width="62" height="30"/>
+                                <state key="normal" title="开始直播"/>
+                                <connections>
+                                    <action selector="startLive:" destination="j4y-uI-iNx" eventType="touchUpInside" id="Tmf-Wk-AAp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fZx-us-yY2" firstAttribute="top" secondItem="f5D-Vf-mds" secondAttribute="bottom" constant="15" id="RXP-Qj-bLy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZFL-yY-lPz" secondAttribute="trailing" id="Usd-qh-Uy7"/>
+                            <constraint firstItem="fZx-us-yY2" firstAttribute="leading" secondItem="fip-YW-CUL" secondAttribute="leadingMargin" id="W2y-Jp-lTN"/>
+                            <constraint firstItem="ZFL-yY-lPz" firstAttribute="top" secondItem="f5D-Vf-mds" secondAttribute="bottom" constant="15" id="gNW-PQ-cpJ"/>
+                            <constraint firstItem="r3D-3S-xEa" firstAttribute="top" secondItem="vQg-4a-itK" secondAttribute="bottom" constant="30" id="p9K-wQ-5iu"/>
+                            <constraint firstItem="vQg-4a-itK" firstAttribute="centerX" secondItem="fip-YW-CUL" secondAttribute="centerX" id="qfE-D3-I9s"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="x6Y-T3-TT3"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrV-tT-8x0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="364"/>
+        </scene>
+    </scenes>
+</document>
