@@ -16,10 +16,10 @@ enum MethodType {
 
 class MBNetworkTool {
 
-    class func requestData(_ type: MethodType = .GET, UrlString: String, parameters: [String : Any]? = nil, callBack: @escaping (_ error: Error?,_ result: Any?) ->())  {
+    class func requestData(_ type: MethodType = .GET, urlString: String, parameters: [String : Any]?, callBack: @escaping (_ error: Error?,_ result: Any?) ->())  {
         
         let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
-        Alamofire.request(UrlString, method: method, parameters: parameters).responseJSON { (respose) in
+        Alamofire.request(urlString, method: method, parameters: parameters).responseJSON { (respose) in
             
             guard let result = respose.result.value else {
                 

@@ -17,6 +17,11 @@
 		CE4F82DF1E26115B003F6855 /* LiveAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82DE1E26115B003F6855 /* LiveAppUITests.swift */; };
 		CEE0BE261E26327000AC9890 /* MBLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE251E26327000AC9890 /* MBLiveViewController.swift */; };
 		CEE0BE2C1E265D2D00AC9890 /* MBLiveCaptureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE2B1E265D2D00AC9890 /* MBLiveCaptureTool.swift */; };
+		CEE0BE301E27652400AC9890 /* MBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE2F1E27652400AC9890 /* MBListViewController.swift */; };
+		CEE0BE321E27694E00AC9890 /* MBListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE311E27694E00AC9890 /* MBListViewModel.swift */; };
+		CEE0BE361E27705500AC9890 /* MBLivesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE351E27705500AC9890 /* MBLivesModel.swift */; };
+		CEE0BE391E27836100AC9890 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0BE381E27836100AC9890 /* ListCell.xib */; };
+		CEE0BE3B1E27859F00AC9890 /* MBLiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE3A1E27859F00AC9890 /* MBLiveListCell.swift */; };
 		CEE7DD1B1E2616DA0007B4BA /* MBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7DD1A1E2616DA0007B4BA /* MBNetworkTool.swift */; };
 		CEE7DD2A1E262EDB0007B4BA /* LiveList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE7DD281E262EDB0007B4BA /* LiveList.storyboard */; };
 		CEE7DD2C1E262EF30007B4BA /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE7DD2B1E262EF30007B4BA /* LiveView.storyboard */; };
@@ -60,6 +65,11 @@
 		CEE0BE251E26327000AC9890 /* MBLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveViewController.swift; sourceTree = "<group>"; };
 		CEE0BE291E264EDB00AC9890 /* Objective-CBrigdingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBrigdingHeader.h"; sourceTree = "<group>"; };
 		CEE0BE2B1E265D2D00AC9890 /* MBLiveCaptureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveCaptureTool.swift; sourceTree = "<group>"; };
+		CEE0BE2F1E27652400AC9890 /* MBListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBListViewController.swift; sourceTree = "<group>"; };
+		CEE0BE311E27694E00AC9890 /* MBListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBListViewModel.swift; sourceTree = "<group>"; };
+		CEE0BE351E27705500AC9890 /* MBLivesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLivesModel.swift; sourceTree = "<group>"; };
+		CEE0BE381E27836100AC9890 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		CEE0BE3A1E27859F00AC9890 /* MBLiveListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveListCell.swift; sourceTree = "<group>"; };
 		CEE7DD1A1E2616DA0007B4BA /* MBNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBNetworkTool.swift; sourceTree = "<group>"; };
 		CEE7DD291E262EDB0007B4BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveList.storyboard; sourceTree = "<group>"; };
 		CEE7DD2B1E262EF30007B4BA /* LiveView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LiveView.storyboard; sourceTree = "<group>"; };
@@ -140,7 +150,7 @@
 				CE4F82BE1E26115A003F6855 /* AppDelegate.swift */,
 				CE4F82C01E26115A003F6855 /* ViewController.swift */,
 				CE4F82C21E26115A003F6855 /* Main.storyboard */,
-				CEE7DD281E262EDB0007B4BA /* LiveList.storyboard */,
+				CEE0BE2D1E27649300AC9890 /* List */,
 				CEE0BE231E26323800AC9890 /* Live */,
 				CE4F82C51E26115B003F6855 /* Assets.xcassets */,
 				CE4F82C71E26115B003F6855 /* LaunchScreen.storyboard */,
@@ -199,6 +209,51 @@
 				CEE0BE2B1E265D2D00AC9890 /* MBLiveCaptureTool.swift */,
 			);
 			name = LiveCapture;
+			sourceTree = "<group>";
+		};
+		CEE0BE2D1E27649300AC9890 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0BE371E2782CF00AC9890 /* View */,
+				CEE0BE341E27702A00AC9890 /* Model */,
+				CEE0BE331E27695100AC9890 /* ViewModel */,
+				CEE0BE2E1E27650E00AC9890 /* Controller */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		CEE0BE2E1E27650E00AC9890 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEE7DD281E262EDB0007B4BA /* LiveList.storyboard */,
+				CEE0BE2F1E27652400AC9890 /* MBListViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CEE0BE331E27695100AC9890 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0BE311E27694E00AC9890 /* MBListViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEE0BE341E27702A00AC9890 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0BE351E27705500AC9890 /* MBLivesModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CEE0BE371E2782CF00AC9890 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0BE381E27836100AC9890 /* ListCell.xib */,
+				CEE0BE3A1E27859F00AC9890 /* MBLiveListCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		CEE7DD181E2616A00007B4BA /* Tool */ = {
@@ -333,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4F82C91E26115B003F6855 /* LaunchScreen.storyboard in Resources */,
+				CEE0BE391E27836100AC9890 /* ListCell.xib in Resources */,
 				CE4F82C61E26115B003F6855 /* Assets.xcassets in Resources */,
 				CEE7DD2A1E262EDB0007B4BA /* LiveList.storyboard in Resources */,
 				CE4F82C41E26115A003F6855 /* Main.storyboard in Resources */,
@@ -409,10 +465,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE0BE361E27705500AC9890 /* MBLivesModel.swift in Sources */,
 				CE4F82C11E26115A003F6855 /* ViewController.swift in Sources */,
 				CE4F82BF1E26115A003F6855 /* AppDelegate.swift in Sources */,
 				CEE7DD1B1E2616DA0007B4BA /* MBNetworkTool.swift in Sources */,
+				CEE0BE301E27652400AC9890 /* MBListViewController.swift in Sources */,
+				CEE0BE3B1E27859F00AC9890 /* MBLiveListCell.swift in Sources */,
 				CEE0BE2C1E265D2D00AC9890 /* MBLiveCaptureTool.swift in Sources */,
+				CEE0BE321E27694E00AC9890 /* MBListViewModel.swift in Sources */,
 				CEE0BE261E26327000AC9890 /* MBLiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
