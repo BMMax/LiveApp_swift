@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MBPlayerViewController" customModule="LiveApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NhP-jn-6ee" userLabel="返回">
+                    <rect key="frame" x="10" y="10" width="32" height="32"/>
+                    <state key="normal" image="返回"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osg-be-8ym" userLabel="暂停">
+                    <rect key="frame" x="333" y="10" width="32" height="32"/>
+                    <state key="normal" image="暂停"/>
+                    <state key="selected" image="开始"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NhP-jn-6ee" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="FVS-LI-4RF"/>
+                <constraint firstItem="NhP-jn-6ee" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="c2c-cv-qMM"/>
+                <constraint firstItem="Osg-be-8ym" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="dFn-jO-3Ed"/>
+                <constraint firstAttribute="trailing" secondItem="Osg-be-8ym" secondAttribute="trailing" constant="10" id="png-Kc-294"/>
+            </constraints>
+            <point key="canvasLocation" x="159" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="开始" width="32" height="32"/>
+        <image name="暂停" width="32" height="32"/>
+        <image name="返回" width="32" height="32"/>
+    </resources>
+</document>

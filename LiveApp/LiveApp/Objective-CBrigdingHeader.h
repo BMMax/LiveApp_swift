@@ -10,5 +10,6 @@
 #define Objective_CBrigdingHeader_h
 
 #import <LFLiveKit/LFLiveKit.h>
+#import <IJKMediaFramework/IJKMediaFramework.h>
 
 #endif /* Objective_CBrigdingHeader_h */

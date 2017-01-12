@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		9A14D910B47C44448E907D3B /* Pods_LiveApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76136B2B64448261ED1C039 /* Pods_LiveApp.framework */; };
 		CE4F82BF1E26115A003F6855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82BE1E26115A003F6855 /* AppDelegate.swift */; };
-		CE4F82C11E26115A003F6855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82C01E26115A003F6855 /* ViewController.swift */; };
 		CE4F82C41E26115A003F6855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4F82C21E26115A003F6855 /* Main.storyboard */; };
 		CE4F82C61E26115B003F6855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4F82C51E26115B003F6855 /* Assets.xcassets */; };
 		CE4F82C91E26115B003F6855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4F82C71E26115B003F6855 /* LaunchScreen.storyboard */; };
 		CE4F82D41E26115B003F6855 /* LiveAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82D31E26115B003F6855 /* LiveAppTests.swift */; };
 		CE4F82DF1E26115B003F6855 /* LiveAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F82DE1E26115B003F6855 /* LiveAppUITests.swift */; };
+		CE98BC811E27E3CD0062EC11 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE98BC7C1E27E3B40062EC11 /* IJKMediaFramework.framework */; };
 		CEE0BE261E26327000AC9890 /* MBLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE251E26327000AC9890 /* MBLiveViewController.swift */; };
 		CEE0BE2C1E265D2D00AC9890 /* MBLiveCaptureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE2B1E265D2D00AC9890 /* MBLiveCaptureTool.swift */; };
 		CEE0BE301E27652400AC9890 /* MBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE2F1E27652400AC9890 /* MBListViewController.swift */; };
@@ -22,6 +22,19 @@
 		CEE0BE361E27705500AC9890 /* MBLivesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE351E27705500AC9890 /* MBLivesModel.swift */; };
 		CEE0BE391E27836100AC9890 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0BE381E27836100AC9890 /* ListCell.xib */; };
 		CEE0BE3B1E27859F00AC9890 /* MBLiveListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE3A1E27859F00AC9890 /* MBLiveListCell.swift */; };
+		CEE0BE491E27C63500AC9890 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE481E27C63500AC9890 /* AudioToolbox.framework */; };
+		CEE0BE4B1E27C63F00AC9890 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE4A1E27C63F00AC9890 /* AVFoundation.framework */; };
+		CEE0BE4D1E27C64900AC9890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE4C1E27C64900AC9890 /* CoreGraphics.framework */; };
+		CEE0BE4F1E27C65200AC9890 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE4E1E27C65200AC9890 /* CoreVideo.framework */; };
+		CEE0BE511E27C66000AC9890 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE501E27C66000AC9890 /* libbz2.tbd */; };
+		CEE0BE531E27C66A00AC9890 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE521E27C66A00AC9890 /* libz.tbd */; };
+		CEE0BE551E27C67200AC9890 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE541E27C67200AC9890 /* MediaPlayer.framework */; };
+		CEE0BE571E27C67B00AC9890 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE561E27C67B00AC9890 /* OpenGLES.framework */; };
+		CEE0BE591E27C68300AC9890 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE581E27C68300AC9890 /* QuartzCore.framework */; };
+		CEE0BE5B1E27C69600AC9890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE5A1E27C69600AC9890 /* UIKit.framework */; };
+		CEE0BE5D1E27C6A000AC9890 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE0BE5C1E27C6A000AC9890 /* VideoToolbox.framework */; };
+		CEE0BE671E27CBFA00AC9890 /* MBPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE0BE651E27CBFA00AC9890 /* MBPlayerViewController.swift */; };
+		CEE0BE681E27CBFA00AC9890 /* MBPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE0BE661E27CBFA00AC9890 /* MBPlayerViewController.xib */; };
 		CEE7DD1B1E2616DA0007B4BA /* MBNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE7DD1A1E2616DA0007B4BA /* MBNetworkTool.swift */; };
 		CEE7DD2A1E262EDB0007B4BA /* LiveList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE7DD281E262EDB0007B4BA /* LiveList.storyboard */; };
 		CEE7DD2C1E262EF30007B4BA /* LiveView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE7DD2B1E262EF30007B4BA /* LiveView.storyboard */; };
@@ -42,6 +55,27 @@
 			remoteGlobalIDString = CE4F82BA1E261159003F6855;
 			remoteInfo = LiveApp;
 		};
+		CE98BC7B1E27E3B40062EC11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE98BC761E27E3B40062EC11 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA8A1B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
+		CE98BC7D1E27E3B40062EC11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE98BC761E27E3B40062EC11 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA941B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFrameworkTests;
+		};
+		CE98BC7F1E27E3BE0062EC11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE98BC761E27E3B40062EC11 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E654EA891B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -51,25 +85,38 @@
 		C0B7AE7D648BE3CA66718CAD /* Pods-LiveApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LiveApp/Pods-LiveApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE4F82BB1E261159003F6855 /* LiveApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4F82BE1E26115A003F6855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE4F82C01E26115A003F6855 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE4F82C31E26115A003F6855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE4F82C51E26115B003F6855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4F82C51E26115B003F6855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		CE4F82C81E26115B003F6855 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE4F82CA1E26115B003F6855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4F82CA1E26115B003F6855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		CE4F82CF1E26115B003F6855 /* LiveAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4F82D31E26115B003F6855 /* LiveAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAppTests.swift; sourceTree = "<group>"; };
 		CE4F82D51E26115B003F6855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4F82DA1E26115B003F6855 /* LiveAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4F82DE1E26115B003F6855 /* LiveAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAppUITests.swift; sourceTree = "<group>"; };
 		CE4F82E01E26115B003F6855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE98BC761E27E3B40062EC11 /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = "../../../../第三方libs/ijkplayer/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj"; sourceTree = "<group>"; };
 		CEE0BE251E26327000AC9890 /* MBLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveViewController.swift; sourceTree = "<group>"; };
-		CEE0BE291E264EDB00AC9890 /* Objective-CBrigdingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Objective-CBrigdingHeader.h"; sourceTree = "<group>"; };
+		CEE0BE291E264EDB00AC9890 /* Objective-CBrigdingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Objective-CBrigdingHeader.h"; path = "../Objective-CBrigdingHeader.h"; sourceTree = "<group>"; };
 		CEE0BE2B1E265D2D00AC9890 /* MBLiveCaptureTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveCaptureTool.swift; sourceTree = "<group>"; };
 		CEE0BE2F1E27652400AC9890 /* MBListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBListViewController.swift; sourceTree = "<group>"; };
 		CEE0BE311E27694E00AC9890 /* MBListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBListViewModel.swift; sourceTree = "<group>"; };
 		CEE0BE351E27705500AC9890 /* MBLivesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLivesModel.swift; sourceTree = "<group>"; };
 		CEE0BE381E27836100AC9890 /* ListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 		CEE0BE3A1E27859F00AC9890 /* MBLiveListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBLiveListCell.swift; sourceTree = "<group>"; };
+		CEE0BE481E27C63500AC9890 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CEE0BE4A1E27C63F00AC9890 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CEE0BE4C1E27C64900AC9890 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEE0BE4E1E27C65200AC9890 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CEE0BE501E27C66000AC9890 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		CEE0BE521E27C66A00AC9890 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CEE0BE541E27C67200AC9890 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		CEE0BE561E27C67B00AC9890 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CEE0BE581E27C68300AC9890 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CEE0BE5A1E27C69600AC9890 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEE0BE5C1E27C6A000AC9890 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		CEE0BE651E27CBFA00AC9890 /* MBPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBPlayerViewController.swift; sourceTree = "<group>"; };
+		CEE0BE661E27CBFA00AC9890 /* MBPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MBPlayerViewController.xib; sourceTree = "<group>"; };
 		CEE7DD1A1E2616DA0007B4BA /* MBNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBNetworkTool.swift; sourceTree = "<group>"; };
 		CEE7DD291E262EDB0007B4BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LiveList.storyboard; sourceTree = "<group>"; };
 		CEE7DD2B1E262EF30007B4BA /* LiveView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LiveView.storyboard; sourceTree = "<group>"; };
@@ -81,6 +128,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE98BC811E27E3CD0062EC11 /* IJKMediaFramework.framework in Frameworks */,
+				CEE0BE5D1E27C6A000AC9890 /* VideoToolbox.framework in Frameworks */,
+				CEE0BE5B1E27C69600AC9890 /* UIKit.framework in Frameworks */,
+				CEE0BE591E27C68300AC9890 /* QuartzCore.framework in Frameworks */,
+				CEE0BE571E27C67B00AC9890 /* OpenGLES.framework in Frameworks */,
+				CEE0BE551E27C67200AC9890 /* MediaPlayer.framework in Frameworks */,
+				CEE0BE531E27C66A00AC9890 /* libz.tbd in Frameworks */,
+				CEE0BE511E27C66000AC9890 /* libbz2.tbd in Frameworks */,
+				CEE0BE4F1E27C65200AC9890 /* CoreVideo.framework in Frameworks */,
+				CEE0BE4D1E27C64900AC9890 /* CoreGraphics.framework in Frameworks */,
+				CEE0BE4B1E27C63F00AC9890 /* AVFoundation.framework in Frameworks */,
+				CEE0BE491E27C63500AC9890 /* AudioToolbox.framework in Frameworks */,
 				9A14D910B47C44448E907D3B /* Pods_LiveApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +164,17 @@
 		04B802E4AA74B277A209D7CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEE0BE5C1E27C6A000AC9890 /* VideoToolbox.framework */,
+				CEE0BE5A1E27C69600AC9890 /* UIKit.framework */,
+				CEE0BE581E27C68300AC9890 /* QuartzCore.framework */,
+				CEE0BE561E27C67B00AC9890 /* OpenGLES.framework */,
+				CEE0BE541E27C67200AC9890 /* MediaPlayer.framework */,
+				CEE0BE521E27C66A00AC9890 /* libz.tbd */,
+				CEE0BE501E27C66000AC9890 /* libbz2.tbd */,
+				CEE0BE4E1E27C65200AC9890 /* CoreVideo.framework */,
+				CEE0BE4C1E27C64900AC9890 /* CoreGraphics.framework */,
+				CEE0BE4A1E27C63F00AC9890 /* AVFoundation.framework */,
+				CEE0BE481E27C63500AC9890 /* AudioToolbox.framework */,
 				B76136B2B64448261ED1C039 /* Pods_LiveApp.framework */,
 				D602AAB2E6A28625BD19BBAE /* Pods_LiveAppTests.framework */,
 				5E8670A4F5F01D467972D2E8 /* Pods_LiveAppUITests.framework */,
@@ -124,6 +194,7 @@
 		CE4F82B21E261159003F6855 = {
 			isa = PBXGroup;
 			children = (
+				CE98BC761E27E3B40062EC11 /* IJKMediaPlayer.xcodeproj */,
 				CE4F82BD1E26115A003F6855 /* LiveApp */,
 				CE4F82D21E26115B003F6855 /* LiveAppTests */,
 				CE4F82DD1E26115B003F6855 /* LiveAppUITests */,
@@ -146,16 +217,8 @@
 		CE4F82BD1E26115A003F6855 /* LiveApp */ = {
 			isa = PBXGroup;
 			children = (
-				CEE7DD181E2616A00007B4BA /* Tool */,
-				CE4F82BE1E26115A003F6855 /* AppDelegate.swift */,
-				CE4F82C01E26115A003F6855 /* ViewController.swift */,
-				CE4F82C21E26115A003F6855 /* Main.storyboard */,
-				CEE0BE2D1E27649300AC9890 /* List */,
-				CEE0BE231E26323800AC9890 /* Live */,
-				CE4F82C51E26115B003F6855 /* Assets.xcassets */,
-				CE4F82C71E26115B003F6855 /* LaunchScreen.storyboard */,
-				CE4F82CA1E26115B003F6855 /* Info.plist */,
-				CEE0BE291E264EDB00AC9890 /* Objective-CBrigdingHeader.h */,
+				CEE0BE3C1E27B9A100AC9890 /* AppEntry */,
+				CEE0BE5F1E27C82B00AC9890 /* Classes */,
 			);
 			path = LiveApp;
 			sourceTree = "<group>";
@@ -178,6 +241,15 @@
 			path = LiveAppUITests;
 			sourceTree = "<group>";
 		};
+		CE98BC771E27E3B40062EC11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE98BC7C1E27E3B40062EC11 /* IJKMediaFramework.framework */,
+				CE98BC7E1E27E3B40062EC11 /* IJKMediaFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CEE0BE231E26323800AC9890 /* Live */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +257,7 @@
 				CEE0BE241E26324B00AC9890 /* Controller */,
 			);
 			name = Live;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CEE0BE241E26324B00AC9890 /* Controller */ = {
@@ -220,6 +293,7 @@
 				CEE0BE2E1E27650E00AC9890 /* Controller */,
 			);
 			name = List;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CEE0BE2E1E27650E00AC9890 /* Controller */ = {
@@ -256,6 +330,55 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		CEE0BE3C1E27B9A100AC9890 /* AppEntry */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F82C71E26115B003F6855 /* LaunchScreen.storyboard */,
+				CE4F82BE1E26115A003F6855 /* AppDelegate.swift */,
+				CE4F82C21E26115A003F6855 /* Main.storyboard */,
+			);
+			name = AppEntry;
+			sourceTree = "<group>";
+		};
+		CEE0BE5F1E27C82B00AC9890 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0BE611E27CAF200AC9890 /* Play */,
+				CEE7DD181E2616A00007B4BA /* Tool */,
+				CEE0BE2D1E27649300AC9890 /* List */,
+				CEE0BE231E26323800AC9890 /* Live */,
+				CEE0BE601E27C86600AC9890 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CEE0BE601E27C86600AC9890 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CE4F82C51E26115B003F6855 /* Assets.xcassets */,
+				CE4F82CA1E26115B003F6855 /* Info.plist */,
+				CEE0BE291E264EDB00AC9890 /* Objective-CBrigdingHeader.h */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		CEE0BE611E27CAF200AC9890 /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0BE621E27CBC700AC9890 /* Controller */,
+			);
+			name = Play;
+			sourceTree = "<group>";
+		};
+		CEE0BE621E27CBC700AC9890 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEE0BE651E27CBFA00AC9890 /* MBPlayerViewController.swift */,
+				CEE0BE661E27CBFA00AC9890 /* MBPlayerViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		CEE7DD181E2616A00007B4BA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +386,7 @@
 				CEE7DD191E2616AD0007B4BA /* Network */,
 			);
 			name = Tool;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		CEE7DD191E2616AD0007B4BA /* Network */ = {
@@ -290,6 +414,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE98BC801E27E3BE0062EC11 /* PBXTargetDependency */,
 			);
 			name = LiveApp;
 			productName = LiveApp;
@@ -373,6 +498,12 @@
 			mainGroup = CE4F82B21E261159003F6855;
 			productRefGroup = CE4F82BC1E261159003F6855 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE98BC771E27E3B40062EC11 /* Products */;
+					ProjectRef = CE98BC761E27E3B40062EC11 /* IJKMediaPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CE4F82BA1E261159003F6855 /* LiveApp */,
@@ -381,6 +512,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CE98BC7C1E27E3B40062EC11 /* IJKMediaFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFramework.framework;
+			remoteRef = CE98BC7B1E27E3B40062EC11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE98BC7E1E27E3B40062EC11 /* IJKMediaFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IJKMediaFrameworkTests.xctest;
+			remoteRef = CE98BC7D1E27E3B40062EC11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CE4F82B91E261159003F6855 /* Resources */ = {
@@ -392,6 +540,7 @@
 				CE4F82C61E26115B003F6855 /* Assets.xcassets in Resources */,
 				CEE7DD2A1E262EDB0007B4BA /* LiveList.storyboard in Resources */,
 				CE4F82C41E26115A003F6855 /* Main.storyboard in Resources */,
+				CEE0BE681E27CBFA00AC9890 /* MBPlayerViewController.xib in Resources */,
 				CEE7DD2C1E262EF30007B4BA /* LiveView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,10 +615,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE0BE361E27705500AC9890 /* MBLivesModel.swift in Sources */,
-				CE4F82C11E26115A003F6855 /* ViewController.swift in Sources */,
 				CE4F82BF1E26115A003F6855 /* AppDelegate.swift in Sources */,
 				CEE7DD1B1E2616DA0007B4BA /* MBNetworkTool.swift in Sources */,
 				CEE0BE301E27652400AC9890 /* MBListViewController.swift in Sources */,
+				CEE0BE671E27CBFA00AC9890 /* MBPlayerViewController.swift in Sources */,
 				CEE0BE3B1E27859F00AC9890 /* MBLiveListCell.swift in Sources */,
 				CEE0BE2C1E265D2D00AC9890 /* MBLiveCaptureTool.swift in Sources */,
 				CEE0BE321E27694E00AC9890 /* MBListViewModel.swift in Sources */,
@@ -505,6 +654,11 @@
 			isa = PBXTargetDependency;
 			target = CE4F82BA1E261159003F6855 /* LiveApp */;
 			targetProxy = CE4F82DB1E26115B003F6855 /* PBXContainerItemProxy */;
+		};
+		CE98BC801E27E3BE0062EC11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IJKMediaFramework;
+			targetProxy = CE98BC7F1E27E3BE0062EC11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -64,5 +64,18 @@ extension MBListViewController: UITableViewDelegate,UITableViewDataSource{
     }
 
 
+    
+    /// 点击cell进行拉流
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let player = MBPlayerViewController()
+        player.streamAddr = liveViewModel.liveGroups[indexPath.row].stream_addr
+        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.pushViewController(player, animated: true)
+        
+    }
+    
+    
+    
 
 }

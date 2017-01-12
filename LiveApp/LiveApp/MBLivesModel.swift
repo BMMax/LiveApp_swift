@@ -46,16 +46,16 @@ class MBLivesModel: NSObject {
     
     var creators: MBCreatorModel?
     var group : Int?
-    var id : Int64?
+    var id : Int?
     var link : Int?
     var multi : Int?
     var name : String?
-    var online_users : Int64?
+    var online_users : Int?
     var optimal : Int?
     var rotate : Int?
-    var shareAddr : String?
+    var share_addr : String?
     var slot : Int?
-    var streamAddr : String?
+    var stream_addr : String?
     var version : Int?
     
     init(dict: [String : Any]) {

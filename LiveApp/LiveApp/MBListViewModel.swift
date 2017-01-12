@@ -53,7 +53,7 @@ extension MBListViewModel{
         
         cell.liveImage.kf.setImage(with: URL(string: iconString ))
         cell.icon.kf.setImage(with: URL(string: iconString))
-        print("人数----\(model.online_users)")
+        print("人数----\(model.online_users)-----\(model.stream_addr)")
         return cell
     }
 }
